@@ -23,7 +23,7 @@ Include in your app:
 
 #Usage
 
-Instantiate the client with your Hackpad Oauth client ID and secret (You can find them on your [account page](https://hackpad.com/ep/account/).
+Instantiate the client with your Hackpad Oauth client ID and secret (You can find them on your [account page](https://hackpad.com/ep/account/)).
 
     var client = new Hackpad(client_id, secret);
 
