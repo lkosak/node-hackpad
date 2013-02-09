@@ -9,7 +9,9 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "client-oauth": "~0.1.2"
+    "client-oauth": "~0.1.2",
+    "oauth-client": "~0.3.0",
+    "underscore": "~1.4.4"
   },
   "main": "./lib/hackpad",
   "scripts": {
