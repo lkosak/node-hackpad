@@ -16,7 +16,7 @@ Include in your app:
 
 Instantiate the client with your Hackpad Oauth client ID and secret (You can find them on your [account page](https://hackpad.com/ep/account/).
 
-    var client = new Hackpad(client_id, secret)
+    var client = new Hackpad(client_id, secret);
 
 Then, just run commands on your fancy new client:
 
@@ -41,15 +41,15 @@ This client supports all the API endpoints described in the [Hackpad API documen
 ### create
     client.create(body, format, [callback])
 
-`body`: a string of body text
-`format`: 'text/html', 'text/x-web-markdown', 'text/plain' (default 'text/html')
+`body` a string of body text
+`format` 'text/html', 'text/x-web-markdown', 'text/plain' (default 'text/html')
 
 ### import
     client.import(padId, body, format, [callback])
 
-`padId`: ID of an existing (or not-existing) pad
-`body`: a string of body text
-`format`: 'text/html', 'text/x-web-markdown', 'text/plain' (default: 'text/html')
+`padId` ID of an existing (or not-existing) pad
+`body` a string of body text
+`format` 'text/html', 'text/x-web-markdown', 'text/plain' (default: 'text/html')
 
 ### revert
     client.revert(padId, revisionId, [callback])
@@ -57,42 +57,44 @@ This client supports all the API endpoints described in the [Hackpad API documen
 ### export
     client.export(padId, format, [callback])
 
-`padId`: ID of an existing pad
-`format`: 'html', 'md', 'txt' (default: 'html')
+`padId` ID of an existing pad
+`format` 'html', 'md', 'txt' (default: 'html')
 
 ### editedSince
     client.editedSince(timestamp, [callback])
 
-`padId`: ID of an existing pad
-`timestamp`: Accepts either a unix timestamp (int) or a Date object
+`padId` ID of an existing pad
+`timestamp` Accepts either a unix timestamp (int) or a Date object
 
 ### revisions
     client.revisions(padId, [callback])
 
-`padId`: ID of an existing pad
+`padId` ID of an existing pad
 
 ### revokeAccess
     client.revokeAccess(email, [callback])
 
-`email`: Email address of the user to revoke access for
+`email` Email address of the user to revoke access for
 
 ### removeUser
     client.removeUser(email, [callback])
 
-`email`: Email address of the user to remove
+`email` Email address of the user to remove
 
 ### setEmailEnabled
     client.setEmailEnabled(email, setting, [callback])
 
-`email`: Email address of the user to update
-`setting`: true or false
+`email` Email address of the user to update
+`setting` true or false
 
 ### search
     client.search(term, [start], [limit], [callback])
 
-`terms`: Search terms
-`start`: Offset to start from
-`limit`: How many results to return
+`terms` Search terms
+
+`start` Offset to start from
+
+`limit` How many results to return
 
 ### list
     client.list([callback])
