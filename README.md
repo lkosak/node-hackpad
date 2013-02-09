@@ -33,12 +33,15 @@ Then, just run commands on your fancy new client:
 
 All methods accept a [callback] function in the usual format:
 
-    function(err, result) {}
+    client.create("I like this hackpad even more", function(err, result) {
+      if(err) { return console.log("Oh crap!"); }
+      // do something...
+    });
 
 JSON responses are parsed automatically for you, so this would work:
 
     client.create("I should stop creating new hackpads", function(err, resp) {
-      doSomethingWith(resp.padId);
+      console.log(resp.padId);
     });
 
 For non-JSON responses (just `export` at this point), the raw body is returned.
@@ -115,7 +118,7 @@ Currently no tests. I am ashamed. Please feel free to write some!
 
 (The MIT License)
 
-Copyright (c) 2009 Lou Kosak &lt;lkosak [at] gmail [dot] com&gt;
+Copyright (c) 2013 Lou Kosak &lt;lkosak [at] gmail [dot] com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
