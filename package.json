@@ -4,7 +4,7 @@
   "engines": {
     "node": ">= 0.6.9"
   },
-  "description": "Client for the Hackpad API",
+  "description": "A client library for the Hackpad API",
   "directories": {
     "lib": "./lib"
   },
