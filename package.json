@@ -1,0 +1,24 @@
+{
+  "name": "node-hackpad",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.6.9"
+  },
+  "description": "Client for the Hackpad API",
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "client-oauth": "~0.1.2"
+  },
+  "main": "./lib/hackpad",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lkosak/node-hackpad.git"
+  },
+  "author": "Lou Kosak <lkosak@gmail.com>",
+  "license": "BSD"
+}
