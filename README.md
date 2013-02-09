@@ -5,22 +5,29 @@ Make sure to check out the official [Hackpad API documentation](https://hackpad.
 
 #Installation
 Clone from here, or install with npm:
+
     npm install hackpad
+
 Include in your app:
+
     var Hackpad = require('hackpad')
 
 #Usage
 
 Instantiate the client with your Hackpad Oauth client ID and secret (You can find them on your [account page](https://hackpad.com/ep/account/).
-    var client = new Hackpad(<client_id>, <secret>)
+
+    var client = new Hackpad(client_id, secret)
 
 Then, just run commands on your fancy new client:
+
     client.create("This is an awesome hackpad");
 
 All methods accept a [callback] function in the usual format:
+
     function(err, result) {}
 
 JSON responses are parsed automatically for you, so this would work:
+
     client.create("I should stop creating new hackpads", function(err, resp) {
       doSomethingWith(resp.padId);
     });
