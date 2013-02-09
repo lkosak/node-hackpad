@@ -19,7 +19,7 @@ Clone from here, or install with npm:
 
 Include in your app:
 
-    var Hackpad = require('hackpad')
+    var Hackpad = require('hackpad');
 
 #Usage
 
