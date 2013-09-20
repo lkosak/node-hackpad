@@ -48,7 +48,9 @@ For non-JSON responses (just `export` at this point), the raw body is returned.
 
 ## Options
 
-`site` custom site (e.g., "mycompany" if your hackpad site is mycompany.hackpad.com)
+An optional options dictionary can be passed to the client.
+
+`site` custom site (e.g., "mycompany" if your Hackpad site is mycompany.hackpad.com)
 
 ## Methods
 
@@ -58,13 +60,16 @@ This client supports all the API endpoints described in the [Hackpad API documen
     client.create(body, format, [callback])
 
 `body` a string of body text
+
 `format` 'text/html', 'text/x-web-markdown', 'text/plain' (default 'text/html')
 
 ### import
     client.import(padId, body, format, [callback])
 
 `padId` ID of an existing (or not-existing) pad
+
 `body` a string of body text
+
 `format` 'text/html', 'text/x-web-markdown', 'text/plain' (default: 'text/html')
 
 ### revert
@@ -74,12 +79,14 @@ This client supports all the API endpoints described in the [Hackpad API documen
     client.export(padId, format, [callback])
 
 `padId` ID of an existing pad
+
 `format` 'html', 'md', 'txt' (default: 'html')
 
 ### editedSince
     client.editedSince(timestamp, [callback])
 
 `padId` ID of an existing pad
+
 `timestamp` Accepts either a unix timestamp (int) or a Date object
 
 ### revisions
@@ -101,6 +108,7 @@ This client supports all the API endpoints described in the [Hackpad API documen
     client.setEmailEnabled(email, setting, [callback])
 
 `email` Email address of the user to update
+
 `setting` true or false
 
 ### search
