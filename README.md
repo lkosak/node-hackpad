@@ -25,7 +25,7 @@ Include in your app:
 
 Instantiate the client with your Hackpad Oauth client ID and secret (You can find them on your [account page](https://hackpad.com/ep/account/)).
 
-    var client = new Hackpad(client_id, secret);
+    var client = new Hackpad(client_id, secret, [options]);
 
 Then, just run commands on your fancy new client:
 
@@ -45,6 +45,10 @@ JSON responses are parsed automatically for you, so this would work:
     });
 
 For non-JSON responses (just `export` at this point), the raw body is returned.
+
+## Options
+
+`site` custom site (e.g., "mycompany" if your hackpad site is mycompany.hackpad.com)
 
 ## Methods
 
