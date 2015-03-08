@@ -76,9 +76,11 @@ This client supports all the API endpoints described in the [Hackpad API documen
     client.revert(padId, revisionId, [callback])
 
 ### export
-    client.export(padId, format, [callback])
+    client.export(padId, revisionId, format, [callback])
 
 `padId` ID of an existing pad
+
+`revisionId` Revision number (default: 'latest')
 
 `format` 'html', 'md', 'txt' (default: 'html')
 
